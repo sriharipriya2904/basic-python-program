@@ -1,0 +1,6 @@
+a=10
+b=20
+print("add of two numbers",a+b)
+print("sub of two numbers",a-b)
+print("mul of two numbers",a*b)
+print("div of two numbers",a/b)
