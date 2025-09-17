@@ -1,0 +1,6 @@
+theory=float(input("theory marks:"))
+practical=float(input("pratical marks"))
+if(theory>=35 and practical>=15)or(theory +pratical>60):
+    print("passed")
+else:
+    print("failed")
