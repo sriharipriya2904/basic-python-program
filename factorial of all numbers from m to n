@@ -8,8 +8,6 @@ def sum_of_factorials(m, n):
     for i in range(m, n + 1):
         total += math.factorial(i)
     return total
-
-# --- main program ---
 m = int(input("Enter m: "))
 n = int(input("Enter n: "))
 
