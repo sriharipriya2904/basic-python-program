@@ -1,0 +1,27 @@
+def product_of_even(m, n):
+    if m > n:
+        return 0  
+    
+    product = 1
+    found_even = False  
+
+    for i in range(m, n + 1):
+        if i % 2 == 0:  # check even
+            product *= i
+            found_even = True
+    
+    if not found_even:
+        return 0  
+    return product
+m = int(input("Enter m: "))
+n = int(input("Enter n: "))
+
+result = product_of_even(m, n)
+
+if result == 0:
+    if m > n:
+        print("Invalid range! m should be less than or equal to n.")
+    else:
+        print("No even numbers found in the given range.")
+else:
+    print(f"Product of even numbers from {m} to {n} = {result}")
